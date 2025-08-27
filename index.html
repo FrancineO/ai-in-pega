@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Efficiency Presentation - Carousel (Cosmos Style)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Cosmos-like styling -->
+    <style>
+        body {
+            background: #f8fafc;
+            font-family: "Segoe UI", Arial, sans-serif;
+            color: #222;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #003366;
+            color: #fff;
+            padding: 18px 0;
+            text-align: center;
+            font-size: 1.5em;
+            font-weight: 500;
+            letter-spacing: 1px;
+        }
+        .carousel-container {
+            max-width: 700px;
+            margin: 40px auto;
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 18px 0 rgba(34, 41, 47, 0.10);
+            padding: 32px 40px 24px 40px;
+        }
+        .carousel-slide {
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            min-height: 300px;
+        }
+        .carousel-slide.active {
+            display: flex;
+            animation: fadeIn 0.4s;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0;}
+            to { opacity: 1;}
+        }
+        h2 {
+            margin-top: 0;
+            color: #003366;
+            font-size: 1.7em;
+        }
+        ul {
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+        .carousel-controls {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 24px;
+        }
+        .carousel-btn {
+            background: #0050b3;
+            color: #fff;
+            border: none;
+            border-radius: 6px;
+            padding: 10px 24px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .carousel-btn:disabled {
+            background: #b3c6e0;
+            cursor: default;
+        }
+        .carousel-indicator {
+            text-align: center;
+            margin-top: 12px;
+            color: #909090;
+            font-size: 0.95em;
+        }
+        footer {
+            background: #f0f4fa;
+            color: #555;
+            text-align: center;
+            padding: 16px 0;
+            font-size: 1em;
+            margin-top: 40px;
+            border-top: 1px solid #e0e6ed;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        AI Efficiency Presentation
+    </header>
+    <div class="carousel-container">
+        <div class="carousel-slide active">
+            <h2>How I Use AI to Boost Efficiency as a Front-End Architect in Pega</h2>
+            <ul>
+                <li><strong>Francine Ong</strong></li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Introduction</h2>
+            <ul>
+                <li>Front-End Architect in Pega</li>
+                <li>Need for efficiency and innovation</li>
+                <li>Embracing AI-powered tools in workflow</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>AI Tools I Use</h2>
+            <ul>
+                <li>Microsoft 365 Copilot</li>
+                <li>Azure OpenAI Chat</li>
+                <li>GitHub Copilot</li>
+                <li>Integrated into daily workflow</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Microsoft 365 Copilot in My Workflow</h2>
+            <ul>
+                <li>Drafting & refining project documentation</li>
+                <li>Summarizing meeting notes & requirements</li>
+                <li>Managing to-do lists for sprints</li>
+                <li>Generating presentations and reports</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Azure OpenAI Chat for Problem Solving</h2>
+            <ul>
+                <li>Researching Pega best practices</li>
+                <li>Rapid prototyping and code snippets</li>
+                <li>Explaining complex concepts to team</li>
+                <li>Brainstorming UI/UX ideas</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>GitHub Copilot for Coding Assistance</h2>
+            <ul>
+                <li>Writing boilerplate code for Pega components</li>
+                <li>Auto-completing repetitive code patterns</li>
+                <li>Detecting bugs & suggesting improvements</li>
+                <li>Speeding up code reviews and refactoring</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Real-World Use Cases</h2>
+            <ul>
+                <li>Prototyping a UI component with Copilot</li>
+                <li>Using OpenAI Chat to troubleshoot integration</li>
+                <li>Automating sprint planning with M365 Copilot</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Benefits of Using AI in My Role</h2>
+            <ul>
+                <li>Increased productivity, reduced manual effort</li>
+                <li>Enhanced code quality & consistency</li>
+                <li>Faster onboarding of new features</li>
+                <li>More time for creative/strategic tasks</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Challenges & Best Practices</h2>
+            <ul>
+                <li>Ensuring code security and privacy</li>
+                <li>Validating AI-generated content</li>
+                <li>Continuous learning & adaptation</li>
+                <li>Collaborating & balancing AI input</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Conclusion</h2>
+            <ul>
+                <li>AI as a powerful ally in front-end architecture</li>
+                <li>Future potential for AI-driven development</li>
+                <li>Encouragement to explore AI tools</li>
+            </ul>
+        </div>
+        <div class="carousel-slide">
+            <h2>Q&amp;A</h2>
+            <ul>
+                <li>Open for questions!</li>
+            </ul>
+        </div>
+
+        <div class="carousel-controls">
+            <button class="carousel-btn" id="prevBtn" disabled>&laquo; Previous</button>
+            <button class="carousel-btn" id="nextBtn">Next &raquo;</button>
+        </div>
+        <div class="carousel-indicator" id="carouselIndicator">Slide 1 of 11</div>
+    </div>
+    <footer>
+        &copy; 2025 Francine Ong &mdash; Pega Front-End Architect
+    </footer>
+    <script>
+        const slides = document.querySelectorAll('.carousel-slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const indicator = document.getElementById('carouselIndicator');
+        let currentSlide = 0;
+
+        function updateCarousel() {
+            slides.forEach((slide, idx) => {
+                slide.classList.toggle('active', idx === currentSlide);
+            });
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+            indicator.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) currentSlide--;
+            updateCarousel();
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < slides.length - 1) currentSlide++;
+            updateCarousel();
+        });
+    </script>
+</body>
+</html>
